@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Temperature converter</title>
+  <link rel="stylesheet" href="temperatureconverter.css">
+</head>
+<body >
+    <div >
+      <h1 >Temperature Converter</h1>
+      <h4>Enter the Temperature value in celcius</h4>
+      <input id="celsius" type="number" placeholder="Enter Celsius">
+      <button id="convert" onclick="convert()">Convert</button>
+    </div>
+    <p id="resultf"></p>
+    <p id="resultk"></p>
+  <script>
+    function convert() {
+      // get the input value
+      var celsius = parseFloat(document.getElementById("celsius").value);
+      
+      // check if the input is a valid number
+      if (isNaN(celsius)) {
+        alert("Please enter a valid number");
+        return;
+      }
+      // convert celsius to fahrenheit using the formula
+      var fahrenheit = (celsius * 9/5) + 32;
+      var kelvin= celsius + 273.15 ;
+
+    
+      if(celsius==0){
+        document.getElementById("resultf").innerHTML = "Value of "  +  celsius + "0° C = " + fahrenheit + "° F";
+      document.getElementById("resultk").innerHTML = "Value of "  +  celsius + "0° C = " + kelvin + "° K";
+
+      }
+      else{
+
+        // display the result in the paragraph element
+      document.getElementById("resultf").innerHTML = "Value of "  +  celsius + "° C = " + fahrenheit + "° F";
+      document.getElementById("resultk").innerHTML = "Value of "  +  celsius + "° C = " + kelvin + "° K";
+      }
+     
+      
+    }
+  
+  </script>
+</body>
+</html>

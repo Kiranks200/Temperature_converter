@@ -1,0 +1,42 @@
+
+    
+    body{
+     background-color: rgb(14, 14, 14);
+     height: 100%;
+     margin-top: 20%;
+    }
+
+    h1,h4 {
+      text-align: center;
+    font-style: normal;
+    color:white;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      border-radius: 20px;
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+      background-color: white;
+      max-width: 200px;
+      padding: .5rem;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      border-radius: 20px;
+      width: 100px;
+      height: 40px;
+      font-size: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bolder;
+      color:white
+    }
+  
