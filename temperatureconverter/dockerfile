@@ -1,0 +1,5 @@
+# Use the Nginx image as a base
+FROM nginx:latest
+
+# Copy your HTML and CSS files to the appropriate directory in the container
+COPY . /usr/share/nginx/html
